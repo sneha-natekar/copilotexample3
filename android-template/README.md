@@ -1,9 +1,11 @@
 # Android Template
 
+<!-- P0ec1 -->
 This is a sample Android project template with the necessary configuration and dependencies to get started with Android development quickly.
 
 ## Directory Structure
 
+<!-- P0ec1 -->
 ```
 android-template/
 ├── build.gradle
@@ -29,6 +31,7 @@ android-template/
 
 ## Getting Started
 
+<!-- P0ec1 -->
 Follow these steps to set up the development environment and start using the template:
 
 1. **Clone the repository:**
@@ -52,6 +55,7 @@ Follow these steps to set up the development environment and start using the tem
 
 ## Dependencies
 
+<!-- P0ec1 -->
 The template includes the following dependencies:
 
 - **Retrofit:** A type-safe HTTP client for Android and Java.
@@ -60,4 +64,5 @@ The template includes the following dependencies:
 
 ## License
 
+<!-- P0ec1 -->
 This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.

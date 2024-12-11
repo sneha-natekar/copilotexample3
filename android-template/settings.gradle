@@ -1,1 +1,6 @@
+/*
+ * This file is used to include the project modules in the build.
+ * Each module is specified using the 'include' statement.
+ */
+
 include ':app'

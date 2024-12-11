@@ -1,48 +1,66 @@
 buildscript {
     repositories {
+        // Add Google and JCenter repositories for Gradle dependencies
         google()
         jcenter()
     }
     dependencies {
+        // Add Gradle plugin for Android build tools
         classpath 'com.android.tools.build:gradle:4.1.0'
+        // Add Kotlin Gradle plugin
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10'
     }
 }
 
 allprojects {
     repositories {
+        // Add Google and JCenter repositories for project dependencies
         google()
         jcenter()
     }
 }
 
+// Apply Android application plugin
 apply plugin: 'com.android.application'
+// Apply Kotlin Android plugin
 apply plugin: 'kotlin-android'
+// Apply Kotlin Android Extensions plugin
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    // Set compile SDK version
     compileSdkVersion 30
+    // Set build tools version
     buildToolsVersion "30.0.2"
 
     defaultConfig {
+        // Set application ID
         applicationId "com.example.androidtemplate"
+        // Set minimum SDK version
         minSdkVersion 16
+        // Set target SDK version
         targetSdkVersion 30
+        // Set version code
         versionCode 1
+        // Set version name
         versionName "1.0"
 
+        // Set test instrumentation runner
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
+            // Disable code minification for release build
             minifyEnabled false
+            // Set ProGuard configuration files
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
+    // Add dependencies for the project
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.10"
     implementation 'androidx.appcompat:appcompat:1.2.0'
